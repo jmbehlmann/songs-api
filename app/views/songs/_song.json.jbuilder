@@ -1,2 +1,5 @@
-json.extract! song, :id, :created_at, :updated_at
-json.url song_url(song, format: :json)
+json.id song.id
+json.title song.title
+json.album song.album
+json.artist song.artist
+json.year song.year
