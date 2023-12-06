@@ -30,4 +30,10 @@ class SongsController < ApplicationController
     @song.save
     render template: "songs/show"
   end
+
+  def destroy
+    @song = Song.find_by(id: params[:id])
+    @song.destroy
+    render json: {message: "This song was DESTROYED!!!!!!"}
+  end
 end

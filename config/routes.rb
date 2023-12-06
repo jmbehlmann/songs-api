@@ -7,4 +7,6 @@ get "/songs/:id" => "songs#show"
 post "/songs" => "songs#create"
 # update a song
 patch "/songs/:id" => "songs#update"
+# destroy a song
+delete "songs/:id" => "songs#destroy"
 end
